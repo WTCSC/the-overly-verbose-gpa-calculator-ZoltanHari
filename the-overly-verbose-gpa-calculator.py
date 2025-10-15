@@ -14,11 +14,11 @@ while True:
     try:
          grades = [float(n) for n in grades_input]
     except ValueError:
-        print("Please enter only numbers for grades.")
+        print("Please only enter numbers for grades.")
         continue
 
     if any(g > 4.0 or g <= 0.0 for g in grades):
-        print("Please enter grades between 0.0 and 4.0.")
+        print("Please only enter grades between 0.0 and 4.0.")
         continue
     else:
         gpa = sum(grades) / len(grades)
@@ -56,12 +56,12 @@ while True:
         type_out("Invalid semester choice. Please choose 1 or 2.")
         continue
 while True:
-    target_gpa_input = type_out("\nWhat is your target GPA? ")
+    target_gpa_input = type_out("What is your target GPA? ")
     target_gpa_input = input()
     try:
         target_gpa = float(target_gpa_input)
     except ValueError:
-        type_out("Please enter a valid number for your target GPA.")
+        type_out("Please enter a number for your target GPA.")
         continue
 
     if target_gpa > 4.0 or target_gpa <= 0.0:
