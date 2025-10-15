@@ -9,7 +9,7 @@ def type_out(text, delay=0.03):
     print()
 
 while True:
-    grades_input = type_out("Enter all of your grades, separating them with spaces: ")
+    grades_input = type_out("Enter all of your grades, separating them with spaces (Ex. 3.2 4.0 2.9): ")
     grades_input = input().split()
     try:
          grades = [float(n) for n in grades_input]
