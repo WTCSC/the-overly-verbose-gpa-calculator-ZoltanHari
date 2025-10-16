@@ -24,7 +24,7 @@ cd the-overly-verbose-gpa-calculator-ZoltanHari
 
 ### Example Equations
 
-
+![Example image of the GPA calculator being used](images/verbose_calculator.png.png)
 
 ## Decision Tree
 
