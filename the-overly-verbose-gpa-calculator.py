@@ -32,25 +32,27 @@ while True:
     semester = input()
     if semester == "1":
         fir_gpa = sum(grades[:half_grades]) / len(grades[:half_grades])
+        round_fir_gpa = round(fir_gpa, 2)
         if fir_gpa == tot_gpa:
             type_out("Yer krumpin' average fer da furst 'alf iz da same as da whole zoggin' year.")
             break
         elif fir_gpa > tot_gpa:
-            type_out(f"Yer krumpin' average fer da furst 'alf of {fir_gpa} is betta dan yer total!")
+            type_out(f"Yer krumpin' average fer da furst 'alf of {round_fir_gpa} is betta dan yer total!")
             break
         elif tot_gpa > fir_gpa:
-            type_out(f"Yer krumpin' average fer da furst 'alf of {fir_gpa} is rubbish compared ta yer total!")
+            type_out(f"Yer krumpin' average fer da furst 'alf of {round_fir_gpa} is rubbish compared ta yer total!")
             break
     elif semester == "2":
         sec_gpa = sum(grades[half_grades:]) / len(grades[half_grades:])
+        round_sec_gpa = round(sec_gpa, 2)
         if sec_gpa == tot_gpa:
             type_out(f"Yer krumpin' average fer da sekund 'alf iz da same as da whole zoggin' year.")
             break
         elif sec_gpa > tot_gpa:
-            type_out(f"Yer krumpin' average fer da sekund 'alf of {sec_gpa} is betta dan yer total!")
+            type_out(f"Yer krumpin' average fer da sekund 'alf of {round_sec_gpa} is betta dan yer total!")
             break
         elif tot_gpa > sec_gpa:
-            type_out(f"Yer krumpin' average fer da sekund 'alf of {sec_gpa} is rubbish compared ta yer total")
+            type_out(f"Yer krumpin' average fer da sekund 'alf of {round_sec_gpa} is rubbish compared ta yer total")
             break
     else:
         type_out("Dat's da rong choice, ya git! Pick 1 or 2!")
@@ -75,8 +77,9 @@ while True:
             new_grade = grades.copy()
             new_grade[i] = 4.0
             new_gpa = sum(new_grade) / len(new_grade)
+            round_new_gpa = round(new_gpa, 2)
         if new_gpa >= target_gpa:
-            type_out(f"If ya change grade numba {i+1} ta a 4.0, ya get {new_gpa:.2f}, an' dat stomps all over yer target!")
+            type_out(f"If ya change grade numba {i+1} ta a 4.0, ya get {round_new_gpa:.2f}, an' dat stomps all over yer target!")
             break
         else:
             type_out("Zog it! Changin' just wun grade ta 4.0 'ent gonna be enuff.")
