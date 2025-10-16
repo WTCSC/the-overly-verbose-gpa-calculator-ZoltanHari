@@ -3,7 +3,7 @@
 
 # The Overly Verbose GPA Calculator
 
-The Overly Verbose GPA Calculator is a fun way to see what your GPA is for all of your classes with the twist being that it speaks too much and has a little trouble with spelling.
+The Overly Verbose GPA Calculator is a fun way to see what your GPA is for all of your classes with the twist being that it can only speak in a cockney-British accent. The GPA calculator will use the grades from all of your classes throughout the year to give you your total GPA, GPA for each semester, and tell you if you can reach your target GPA
 
 ## Requirements
 - Python 3.8 or higher
