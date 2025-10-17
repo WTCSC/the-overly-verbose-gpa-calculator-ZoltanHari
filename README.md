@@ -7,7 +7,7 @@ The Overly Verbose GPA Calculator is a fun way to see what your GPA is for all o
 
 ## Requirements
 - Python 3.8 or higher
-- Git Installed on Device
+- Git Installed
 
 
 ## Installation
@@ -29,3 +29,4 @@ cd the-overly-verbose-gpa-calculator-ZoltanHari
 
 ## Decision Tree
 
+https://docs.google.com/document/d/1FyWYZCE1pY79OFTTxeAEQ0hZb-evgU_h01zA7a-CCvI/edit?tab=t.0
